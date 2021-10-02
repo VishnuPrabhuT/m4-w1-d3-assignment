@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/wk5-day3-assignment/css/styles.css">
+    <link rel="stylesheet" href="wk5-day3-assignment/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 
@@ -22,7 +22,8 @@
             <div class="catalog">
                 <div v-for="url in urls">
                     <div class="img" :style="{'background': `no-repeat center/cover url(${url})` }"></div>
-                    <span>{{url.split('_')[1]}}</span>
+                    <span class="title">Lorem ipsum</span>
+                    <p>Lorem ipsum</p>
                     <button>Add to Cart</button>
                 </div>
             </div>

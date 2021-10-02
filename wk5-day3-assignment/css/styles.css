@@ -49,6 +49,14 @@ body {
 .main-wrapper .catalog > div button {
   width: max-content;
   padding: 5px;
+  background-color: white;
+}
+.main-wrapper .catalog > div span.title {
+  font-weight: bold;
+}
+.main-wrapper .catalog > div p {
+  font-style: italic;
+  font-weight: 250;
 }
 
 /*# sourceMappingURL=styles.css.map */
