@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bitter;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-wrapper {
+  height: 100%;
+  font-family: "Bitter", sans-serif;
+}
+.main-wrapper .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh auto;
+  width: max-content;
+  background-color: #3a6073;
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  color: white;
+}
+.main-wrapper .catalog {
+  max-width: 80em;
+  width: 55em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-self: center;
+  gap: 10px;
+}
+.main-wrapper .catalog > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper .catalog > div .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.main-wrapper .catalog > div button {
+  width: max-content;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

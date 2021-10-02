@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700)
+
+//Colors:
+
+$c1: rgb(255,255,255)
+$c1: rgb(0,0,0)
+$c1: rgba(0,0,0,0.5)
+$c1: rgba(0,0,0,0.24)
+$c1: rgb(22, 34, 42)
+$c1: rgb(58, 96, 115)
+
+//Fonts:
+$font_family1: Bitter
+$font_family2: FontAwesome
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $font_family1
+
+$max-width: 80em
+
+body
+  height: 100vh
+
+.main-wrapper
+  height: 100%
+  font-family: "Bitter", sans-serif
+
+  & .header
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 5vh auto
+    width: max-content
+    background-color: $c1
+    width: 100%
+    height: 15vh
+    text-align: center
+    color: rgb(255, 255, 255)
+
+  & .catalog
+    max-width: $max-width
+    width: clamp(40em, 55em, $max-width)
+    margin: 0 auto
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(3, 1fr)
+    place-self: center
+    gap: 10px
+
+    & > div
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      & .img
+        width: 200px
+        height: 200px
+        border-radius: 10px
+
+      & button
+        width: max-content
+        padding: 5px
